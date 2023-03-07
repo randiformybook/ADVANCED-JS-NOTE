@@ -1,14 +1,10 @@
 //Callback Functions
 
-const isEven = (n) => {
-	return n % 2 == 0;
-	//nilai return disini berbentuk boolean,
-	if (n%2 ==0);
-	//tu adalah nilai true nya
-  }
-//isEven ialah Function Pertama,yaitu function boolean
+const isEven = (n) => n % 2 == 0;
+	//nilai return disini berbentuk boolean jika (n%2 ==0) tu adalah nilai true nya
+	//isEven ialah Function Pertama,yaitu function boolean
  
-let printMsg1 = (evenFunc, num) => {
+let printMsg = (evenFunc, num) => {
 	//evenFunc akan dijadikan wadah yang berisi function isEven
 	//masukan ke dalam variable baru dengan bentuk dengan num sebagai argument (n) nya
     const isNumEven = evenFunc(num);
@@ -16,9 +12,8 @@ let printMsg1 = (evenFunc, num) => {
   }
 
 // Pass in isEven as the callback function
-printMsg1(isEven, 4);
-//maksud dari running function printMsg ialah : 
-printMsg(boolean, 4);
+printMsg(isEven, 4);
+//maksud dari running function printMsg ialah : printMsg(boolean, 4);
 // Prints: The number 4 is an even number: True.
 
 //—--------------------------------------------
